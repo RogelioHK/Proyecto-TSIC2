@@ -1,0 +1,44 @@
+/* background color */
+.navbar-custom {
+  background-color: #CB285A; /* Rosa Méxicano */
+}
+.bg-custom {
+  background-color: #CB285A; /* Rosa Méxicano */
+}
+/* Personalización de los colores */
+body {
+  background-color: #ffffff; /* Fondo blanco */
+}
+.navbar-custom .navbar-brand {
+  color: #ffffff; /* Texto blanco en la barra de navegación */
+}
+.navbar-custom .navbar-nav .nav-link {
+  color: #ffffff; /* Texto blanco en los enlaces de la barra de navegación */
+}
+.carousel-indicators li {
+  background-color: #0EAD29; /* Verde */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #0EAD29; /* Verde */
+}
+
+/* Restringe el tamaño de las imágenes del carrusel */
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+/* Cuerpo de texto */
+p, span, a, li {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+
