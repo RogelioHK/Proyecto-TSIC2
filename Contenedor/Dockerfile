@@ -33,9 +33,11 @@ COPY my.cnf /etc/mysql/my.cnf
 COPY mariadb.cnf /etc/mysql/conf.d/mariadb.cnf
 
 # Copia tu código PHP al directorio de trabajo de nginx
-COPY data.php /var/www/html/data.php
-COPY index.html /var/www/html/index.html
-COPY estilos.css /var/www/html/estilos.css
+COPY pagina/registro.php /var/www/html/registro.php
+COPY pagina/index.html /var/www/html/index.html
+COPY pagina/styles.css /var/www/html/styles.css
+COPY pagina/imagenes/ /var/www/html/imagenes
+COPY pagina/script.js /var/www/html/script.js
 
 # Configura PHP-FPM
 COPY php-fpm.conf /etc/php/7.4/fpm/php-fpm.conf

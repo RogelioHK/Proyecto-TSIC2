@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CookBook+</title>
+  <link rel="icon" type="image/png" href="imagenes/icono.png">
   <!-- Agrega los enlaces a los archivos CSS de Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Agrega los enlaces a los archivos de fuente de los iconos de redes sociales -->
@@ -17,7 +18,7 @@
   <!-- Resto del contenido del archivo HTML -->
  <!-- Barra de selección -->
   <nav class="navbar navbar-expand-md navbar-custom">
-    <a class="navbar-brand" href="#"><img src="icono.png" alt="Icono" width="30" height="30" class="mr-2">CookBook+</a>
+    <a class="navbar-brand" href="#"><img src="imagenes/icono.png" alt="Icono" width="30" height="30" class="mr-2">CookBook+</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -31,7 +32,7 @@
           <a class="nav-link" href="#" onclick="mostrarRecetas()">Recetas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" onclick="mostrarRegistro()">Mis recetas</a>
+          <a class="nav-link" href="#" onclick="mostrarRegistro()">Publicar receta</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" onclick="mostrarContacto()">Contacto</a>
@@ -49,13 +50,13 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="comida1.jpg" class="d-block w-100" alt="Imagen 1">
+        <img src="imagenes/c1.jpg" class="d-block w-100" alt="Imagen 1">
       </div>
       <div class="carousel-item">
-        <img src="comida2.jpg" class="d-block w-100" alt="Imagen 2">
+        <img src="imagenes/c2.jpg" class="d-block w-100" alt="Imagen 2">
       </div>
       <div class="carousel-item">
-        <img src="comida3.jpg" class="d-block w-100" alt="Imagen 3">
+        <img src="imagenes/c3.jpg" class="d-block w-100" alt="Imagen 3">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carrusel" role="button" data-slide="prev">
@@ -72,45 +73,48 @@
   <section id="Descripcion" class="container my-5">
     <h2>¡Bienvenido a CookBook+!</h2>
     <ul>
-      En CookBook+, creemos en el poder de la cocina casera y en el placer de compartir recetas deliciosas con familiares y amigos. Nuestra plataforma en línea está diseñada para ayudarte a organizar y almacenar todas tus recetas culinarias favoritas en un solo lugar, brindándote acceso instantáneo a ellas en cualquier momento y desde cualquier dispositivo.
+      En CookBook+, creemos en el poder de la cocina casera y en el placer de compartir recetas deliciosas con la comunidad. Nuestra plataforma en línea te brinda la oportunidad de mostrar tus habilidades culinarias al mundo y ser parte de una comunidad apasionada por la cocina. <br>
+      ¿Tienes una receta especial que quieres compartir? En CookBook+, te invitamos a enviar tus creaciones culinarias y compartirlas con otros amantes de la cocina. Compartir tus recetas no solo te permite mostrar tu talento, sino que también inspira a otros a probar nuevos platos y explorar diferentes sabores.
     </ul>
   </section>
 
 		<!-- Contenido dinámico: Recetas -->
 	<section id="recetas" class="container my-5" style="display: none;">
 		<h2>Recetas</h2>
-		<p>En CookBook+, la creación y organización de tus recetas es fácil y conveniente. Puedes utilizar nuestro sencillo formulario para ingresar todos los detalles de tu receta, desde el nombre y los ingredientes necesarios hasta los pasos de preparación y el tiempo de cocción. También puedes agregar una foto para hacerla visualmente atractiva y apetitosa. Además, nuestras opciones de categorización y etiquetado te permiten organizar tus recetas de manera personalizada, facilitando la búsqueda y la gestión.</p>
-		
+		<ul>
+      En CookBook+, creemos en el poder de la cocina casera y en la emoción de descubrir nuevas recetas deliciosas. Nuestra plataforma en línea es el lugar perfecto para compartir y explorar una variedad increíble de creaciones culinarias.<br>
+      ¿Quieres ser parte de una comunidad apasionada por la cocina y ver tus recetas ganar popularidad? CookBook+ te invita a compartir tus creaciones culinarias y mostrar tus habilidades en la cocina. Cada receta que envíes tiene el potencial de convertirse en un éxito entre nuestra comunidad de amantes de la cocina.
+    </ul>
 		<div class="row">
 		  <!-- Primer post -->
 		  <div class="col-sm-4">
-		    <div class="post">
+		    <div class="card" align="center">
 		      <h3>Alambre a la Méxicana</h3>
 		      <p>Chef: Adrian</p>
-		      <a href="#" onclick="mostrarReceta('comida1.jpg', 'La receta de alambre es un platillo mexicano lleno de sabores y colores vibrantes. Este delicioso platillo combina tiernas tiras de carne, típicamente de res o pollo, con pimientos, cebolla y tocino, todo ello cocinado a la perfección en una sartén. ')"> 
-		        <img src="comida1.jpg" alt="Receta 1" width="200" height="200">
+		      <a href="#" onclick="mostrarReceta('imagenes/comida1.jpg', 'La receta de alambre es un platillo mexicano lleno de sabores y colores vibrantes. Este delicioso platillo combina tiernas tiras de carne, típicamente de res o pollo, con pimientos, cebolla y tocino, todo ello cocinado a la perfección en una sartén. ')"> 
+		        <img src="imagenes/comida1.jpg" alt="Receta 1" width="200" height="200">
 		      </a>
 		    </div>
 		  </div>
 		  
 		  <!-- Segundo post -->
 		  <div class="col-sm-4">
-		    <div class="post">
+		    <div class="card" align="center">
 		      <h3>Albondigas</h3>
 		      <p>Chef: Benito</p>
-		      <a href="#" onclick="mostrarReceta('comida2.jpg', 'Las albóndigas son una delicia clásica y reconfortante que ha conquistado los corazones y paladares de muchas culturas alrededor del mundo. Estas pequeñas y jugosas bolitas de carne, ya sea de res, cerdo, pollo o una combinación de ellas, se sazonan con hierbas, especias y otros ingredientes aromáticos, luego se cocinan a fuego lento en una salsa de tomate o caldo, absorbiento todos los sabores y resultando en una textura tierna y jugosa. ')"> 
-		        <img src="comida2.jpg" alt="Receta 2" width="200" height="200">
+		      <a href="#" onclick="mostrarReceta('imagenes/comida2.jpg', 'Las albóndigas son una delicia clásica y reconfortante que ha conquistado los corazones y paladares de muchas culturas alrededor del mundo. Estas pequeñas y jugosas bolitas de carne, ya sea de res, cerdo, pollo o una combinación de ellas, se sazonan con hierbas, especias y otros ingredientes aromáticos, luego se cocinan a fuego lento en una salsa de tomate o caldo, absorbiento todos los sabores y resultando en una textura tierna y jugosa. ')"> 
+		        <img src="imagenes/comida2.jpg" alt="Receta 2" width="200" height="200">
 		      </a>
 		    </div>
 		  </div>
 		  
 		  <!-- Tercer post -->
 		  <div class="col-sm-4">
-		    <div class="post">
+		    <div class="card" align="center">
 		      <h3>Mojetes Veganos</h3>
 		      <p>Chef: Betty</p>
-		      <a href="#" onclick="mostrarReceta('comida3.jpg', 'Los mojetes veganos son una opción deliciosa y nutritiva para aquellos que siguen una dieta basada en plantas. Estas suculentas hamburguesas veganas están hechas con una combinación de legumbres, como frijoles o lentejas, junto con una variedad de vegetales y condimentos sabrosos.')"> 
-		        <img src="comida3.jpg" alt="Receta 3" width="200" height="200">
+		      <a href="#" onclick="mostrarReceta('imagenes/comida3.jpg', 'Los mojetes veganos son una opción deliciosa y nutritiva para aquellos que siguen una dieta basada en plantas. Estas suculentas hamburguesas veganas están hechas con una combinación de legumbres, como frijoles o lentejas, junto con una variedad de vegetales y condimentos sabrosos.')"> 
+		        <img src="imagenes/comida3.jpg" alt="Receta 3" width="200" height="200">
 		      </a>
 		    </div>
 		  </div>
@@ -131,7 +135,7 @@
 		          <p id="ventanaRecetasTexto"></p>
 		        </div>
 		        <div class="modal-footer">
-				      <button type="button" class="btn btn-primary" onclick="mostrarRegistro()">Registrarse</button>
+				      <button type="button" class="btn btn-primary" onclick="mostrarRegistro()">Comparte tu versión</button>
 				      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 				    </div>
 		      </div>
@@ -143,7 +147,10 @@
   <!-- Contenido dinámico: Contacto -->
   <section id="contacto" class="container my-5" style="display: none;">
     <h2>Contacto</h2>
-    <p>¿Tienes alguna pregunta, sugerencia o comentario? Nos encantaría escuchar de ti. Puedes ponerte en contacto con nuestro equipo de soporte a través de nuestra página de contacto. Estamos aquí para ayudarte en todo lo que necesites y asegurarnos de que tu experiencia en CookBook+ sea lo mejor posible.</p>
+    <ul>¿Tienes alguna pregunta, sugerencia o comentario? <br>
+      Nos encantaría escuchar de ti. Puedes ponerte en contacto con nuestro equipo de soporte a través de nuestras redes. <br>
+      Estamos aquí para ayudarte en todo lo que necesites y asegurarnos de que tu experiencia en CookBook+ sea lo mejor posible.<br>
+    </ul>
   </section>
 
   <!-- Ventana emergente de registro -->
@@ -152,7 +159,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <div class="d-flex align-items-center">
-          <img src="icono.png" alt="Icono" width="60" height="60" class="mr-3">
+          <img src="imagenes/icono.png" alt="Icono" width="60" height="60" class="mr-3">
           <h5 class="modal-title text-center" ">CookBook+</h5>
         </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -160,7 +167,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <p>¡Únete a CookBook+ y lleva tu pasión por la cocina al siguiente nivel! Regístrate hoy mismo y descubre una forma fácil y conveniente de organizar y almacenar todas tus recetas culinarias favoritas.</p>
+        <p>¡Únete a CookBook+ y lleva tu pasión por la cocina al siguiente nivel! ¡Regístrate hoy mismo y descubre una forma fácil y conveniente de descubrir nuevas recetas y compartir todas tus recetas favoritas!</p>
       </div>
       <div class="modal-body">
         <form method="POST" action="registro.php">
@@ -173,8 +180,8 @@
             <input type="text" class="form-control" id="username" name="username" placeholder="Ingrese su nombre de usuario" required>
           </div>
           <div class="form-group">
-            <label for="password">Contraseña</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="Ingrese su contraseña" required>
+            <label for="recipe">Receta</label>
+            <textarea class="form-control" id="recipe" name="recipe" placeholder="Ingrese su receta (máximo 1000 caracteres)" maxlength="1000" required></textarea>
           </div>
           <div class="modal-footer">
             <button type="submit" class="btn btn-primary">Registrarse</button>
