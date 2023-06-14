@@ -42,8 +42,8 @@ COPY pagina/script.js /var/www/html/script.js
 # Configura PHP-FPM
 COPY php-fpm.conf /etc/php/7.4/fpm/php-fpm.conf
 
-RUN chown -R www-data:www-data /var/www/html/data.php
-RUN chmod -R 755 /var/www/html/data.php
+RUN chown -R www-data:www-data /var/www/html/registro.php
+RUN chmod -R 755 /var/www/html/registro.php
 RUN chown -R mysql:mysql /var/lib/mysql /var/run/mysqld
 
 # Agrega la siguiente línea para configurar la contraseña de root
